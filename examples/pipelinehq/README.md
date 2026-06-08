@@ -46,7 +46,11 @@ npm install
 npm run dev
 ```
 
+Keep that terminal open — the server stops when you close it.
+
 Open `http://localhost:5176` to see the sales dashboard.
+
+> **Connection refused?** The dev server isn't running. Run `npm run dev` from `examples/pipelinehq` first and wait for `VITE ready` before opening the URL.
 
 **4. Build for production**
 ```bash

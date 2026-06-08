@@ -5,9 +5,9 @@
   "type": "module",
   "description": "Sales pipeline CRM for small business teams",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "react": "^18.3.1",
