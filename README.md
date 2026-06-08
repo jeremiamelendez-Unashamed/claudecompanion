@@ -69,3 +69,19 @@ If the port is already in use from a previous session:
 ```bash
 npx kill-port 1420 && npx tauri dev
 ```
+
+## HeyGen + Cursor Showcase
+
+Looking for a ready-made example to demo **README → product video** with HeyGen in Cursor? Check out **[LaunchPad](./examples/launchpad/)** — a product launch command center with a video-optimized README and step-by-step guide.
+
+```bash
+cd examples/launchpad && npm install && npm run dev
+```
+
+Then in Cursor Agent mode:
+
+```
+Read examples/launchpad/README.md and make a 90-second product demo video.
+```
+
+See [examples/launchpad/HEYGEN_DEMO.md](./examples/launchpad/HEYGEN_DEMO.md) for the full walkthrough.
