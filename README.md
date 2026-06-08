@@ -69,3 +69,19 @@ If the port is already in use from a previous session:
 ```bash
 npx kill-port 1420 && npx tauri dev
 ```
+
+## HeyGen + Cursor Showcase
+
+**[PlantPal](./examples/plantpal/)** is a lifestyle product example for the README → product video workflow — houseplant care, not code launches. Real React app, video-optimized README, copy-paste HeyGen prompts.
+
+```bash
+cd examples/plantpal && npm install && npm run dev
+```
+
+Open `http://localhost:5175`, then in Cursor Agent mode:
+
+```
+Read examples/plantpal/README.md and make a 90-second product demo video.
+```
+
+See [examples/plantpal/HEYGEN_DEMO.md](./examples/plantpal/HEYGEN_DEMO.md) for the full walkthrough.
