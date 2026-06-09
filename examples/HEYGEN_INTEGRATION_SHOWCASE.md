@@ -136,10 +136,14 @@ visuals, startup founder energy. Landscape format.
 
 ## Generated assets
 
-| Video | Duration | Watch |
-|-------|----------|-------|
-| **HeyGen + Cursor: The Builder's Workflow** | ~1:39 | [app.heygen.com/videos/4749119d47744f4c9eb19eee41e6f054](https://app.heygen.com/videos/4749119d47744f4c9eb19eee41e6f054) |
-| **LaunchPad Product Demo** | ~1:22 | [app.heygen.com/videos/a15527db2bfe4a92942a21c3c359f458](https://app.heygen.com/videos/a15527db2bfe4a92942a21c3c359f458) |
+> **Note:** `app.heygen.com/videos/...` links only work when logged into HeyGen. Use the direct MP4 links below to watch or share without auth.
+
+| Video | Duration | Direct watch (MP4) | HeyGen dashboard |
+|-------|----------|-------------------|------------------|
+| **HeyGen + Cursor: The Builder's Workflow** | ~1:39 | [Open MP4](https://resource2.heygen.ai/aws_pacific/avatar_tmp/a4e89c47f71549c199c9904bd7017607/vcfd162c811e4418e8cffd1fb8bb52987/caption_4749119d47744f4c9eb19eee41e6f054.mp4) | Video ID: `4749119d47744f4c9eb19eee41e6f054` |
+| **LaunchPad Product Demo** | ~1:22 | [Open MP4](https://resource2.heygen.ai/aws_pacific/avatar_tmp/a4e89c47f71549c199c9904bd7017607/v7c51dfa50b3d4d339d63b0c775554cad/caption_a15527db2bfe4a92942a21c3c359f458.mp4) | Video ID: `a15527db2bfe4a92942a21c3c359f458` |
+
+To find either video in HeyGen: sign in → **Projects** → search by title or video ID.
 
 ---
 
