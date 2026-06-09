@@ -72,27 +72,20 @@ npx kill-port 1420 && npx tauri dev
 
 ## HeyGen + Cursor Showcase
 
-Ready-made examples for **README → product video** with HeyGen in Cursor:
+**New chat?** See **[SHOWCASE.md](./SHOWCASE.md)** — one-time MCP setup, then paste:
+
+```
+Make the LaunchPad demo video from the README.
+```
 
 | Example | Product | Port |
 |---------|---------|------|
+| **[LaunchPad](./examples/launchpad/)** ⭐ default | Product launch command center | 5174 |
 | **[PipelineHQ](./examples/pipelinehq/)** | Sales CRM for small teams | 5176 |
 | **[PlantPal](./examples/plantpal/)** | Houseplant care companion | 5175 |
-| **[LaunchPad](./examples/launchpad/)** | Product launch command center | 5174 |
 
-**Business (B2B sales):**
 ```bash
-cd examples/pipelinehq && npm install && npm run dev
+cd examples/launchpad && npm install && npm run dev   # http://localhost:5174
 ```
 
-**Lifestyle:**
-```bash
-cd examples/plantpal && npm install && npm run dev
-```
-
-In Cursor Agent mode:
-```
-Read examples/pipelinehq/README.md and make a 90-second product demo video.
-```
-
-See each example's `HEYGEN_DEMO.md` for copy-paste prompts and iteration tips.
+Agent rule: `.cursor/rules/heygen-video-showcase.mdc` — teaches Cursor the video workflow in fresh chats.
