@@ -138,16 +138,16 @@ visuals, startup founder energy. Landscape format.
 
 | Video | Duration | Watch |
 |-------|----------|-------|
-| **HeyGen + Cursor integration showcase** | TBD | _generating…_ |
-| **LaunchPad product demo** | TBD | _generating…_ |
+| **HeyGen + Cursor: The Builder's Workflow** | ~1:39 | [app.heygen.com/videos/4749119d47744f4c9eb19eee41e6f054](https://app.heygen.com/videos/4749119d47744f4c9eb19eee41e6f054) |
+| **LaunchPad Product Demo** | ~1:22 | [app.heygen.com/videos/a15527db2bfe4a92942a21c3c359f458](https://app.heygen.com/videos/a15527db2bfe4a92942a21c3c359f458) |
 
 ---
 
 ## Recording checklist
 
 - [x] HeyGen MCP authenticated in Cursor
-- [ ] `examples/launchpad` runs at http://localhost:5174
-- [ ] LaunchPad product demo pre-rendered (asset for Scene 6)
+- [x] `examples/launchpad` runs at http://localhost:5174
+- [x] LaunchPad product demo pre-rendered (asset for Scene 6)
 - [ ] Screen recordings: README scroll, Cursor prompt, HeyGen session page
 
 ## Showcase examples in this repo
