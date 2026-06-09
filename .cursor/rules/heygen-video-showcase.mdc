@@ -1,0 +1,62 @@
+---
+description: Generate HeyGen product demo videos from showcase READMEs via MCP. Use when the user asks for a demo video, showcase video, HeyGen video, or LaunchPad/PipelineHQ/PlantPal video.
+alwaysApply: false
+---
+
+# HeyGen Video Showcase Workflow
+
+This repo includes ready-made SaaS/lifestyle showcase apps for **README → HeyGen video** demos.
+
+## Default product
+
+Unless the user names another example, use **LaunchPad** (`examples/launchpad/`) — high-energy SaaS startup launch tone.
+
+| Example | Path | Tone |
+|---------|------|------|
+| **LaunchPad** (default) | `examples/launchpad/` | SaaS / startup launch |
+| PipelineHQ | `examples/pipelinehq/` | B2B sales CRM |
+| PlantPal | `examples/plantpal/` | Lifestyle / warm |
+
+## Required steps for every video request
+
+1. **Verify HeyGen MCP** — call `get_current_user`. If `needsAuth`, tell the user to authenticate in Cursor Settings → MCP → HeyGen.
+2. **Read the product README** — e.g. `examples/launchpad/README.md` for script structure (audience, features, hook, close).
+3. **Generate** — call `create_video_agent` with `mode: "generate"`, `orientation: "landscape"`, and a prompt derived from the README.
+4. **Poll** — use `get_video` (and optionally `get_video_agent_session`) until `status` is `completed`.
+5. **Return links** — share the **`captioned_video_url`** or `video_url` from the API response (usually `resource2.heygen.ai` or `files2.heygen.ai`). Do **not** only give `app.heygen.com/videos/...` — those require HeyGen login.
+
+## Default product demo prompt (LaunchPad)
+
+```
+Read examples/launchpad/README.md and make a 90-second product demo video
+for LaunchPad. High-energy SaaS product launch tone — confident presenter,
+dark-mode dashboard visuals, startup founder energy. Landscape format.
+```
+
+## Integration showcase prompt (meta demo)
+
+```
+Read examples/HEYGEN_INTEGRATION_SHOWCASE.md and create a ~2-minute video
+explaining the HeyGen + Cursor README-to-video workflow using LaunchPad
+as the example product.
+```
+
+## Iteration follow-ups
+
+- "Make the hook more urgent / more energetic"
+- "Emphasize [specific feature from README]"
+- "Translate the finished video to [language] with voice cloning" → `create_video_translation`
+
+## Run the dashboard locally (optional)
+
+```bash
+cd examples/launchpad && npm install && npm run dev
+```
+
+Open http://localhost:5174 — keep the terminal open.
+
+## Reference docs
+
+- `SHOWCASE.md` — user quick-start for new chats
+- `examples/launchpad/HEYGEN_DEMO.md` — LaunchPad-specific prompts
+- `examples/HEYGEN_INTEGRATION_SHOWCASE.md` — full integration script + video links
