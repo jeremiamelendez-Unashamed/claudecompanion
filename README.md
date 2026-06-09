@@ -1,71 +1,37 @@
-# Claude Companion — Johnny Joestar Desktop Pet
+# Billora
 
-A Tauri v2 + React desktop companion app featuring Johnny Joestar from JoJo's Bizarre Adventure Part 7. He walks across the bottom of your screen, reacts to what you're doing, and chats with you via Claude AI.
+**Get paid faster. Invoicing built for freelancers and small studios.**
 
-## Features
+Billora turns the most painful part of freelancing, chasing payments, into a 30-second task. Create professional invoices, track what you're owed at a glance, and let automatic reminders do the awkward follow-ups for you.
 
-- Animated sprite walking across your desktop
-- Click Johnny to open a Claude AI chat window
-- Right-click for the context menu:
-  - Wake/sleep toggle
-  - Hide for 5 minutes
-  - Peek at Screen (Johnny comments on what's on your screen)
-  - Start with Windows toggle
-  - Watch My Screen toggle (passive screen awareness every 10 min)
-- Drag Johnny anywhere on screen
-- Speech bubbles with idle commentary
+## Why Billora
 
-## Requirements
+- **30-second invoices.** Pick a client, add line items, hit send. Billora handles numbering, taxes, and your branding automatically.
+- **Know what you're owed.** One dashboard shows outstanding balances, overdue invoices, and this month's revenue, no spreadsheet required.
+- **Automatic reminders.** Polite nudges go out before and after due dates, so you never have to write "just following up" again.
+- **Get paid your way.** Accept cards, bank transfers, and PayPal. Clients pay straight from the invoice link.
+- **Client profiles.** Every client's history, balance, and payment behavior in one place.
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [Rust](https://rustup.rs/)
-- An [Anthropic API key](https://console.anthropic.com/)
+## Getting Started
 
-## Setup
+1. **Create your account** and add your business name and logo.
+2. **Add your first client** from the Clients page.
+3. **Create an invoice**: choose the client, add your line items, set a due date.
+4. **Hit send.** Your client gets a beautiful invoice with a one-click pay button.
+5. **Relax.** Billora tracks the payment and sends reminders if it's late.
 
-**1. Clone the repo**
-```bash
-git clone https://github.com/jeremiamelendez-Unashamed/claudecompanion.git
-cd claudecompanion
-```
+## Pricing
 
-**2. Install dependencies**
-```bash
-npm install
-```
+| Plan | Price | Best for |
+|------|-------|----------|
+| **Starter** | Free | Up to 3 clients, unlimited invoices |
+| **Pro** | $12/mo | Unlimited clients, automatic reminders, custom branding |
+| **Studio** | $29/mo | Teams up to 5, client portal, revenue reports |
 
-**3. Add your API key**
+## Tech
 
-Create a `.env` file in the root folder:
-```
-VITE_ANTHROPIC_API_KEY=your-api-key-here
-```
+Built with Next.js, Tailwind CSS, and shadcn/ui.
 
-**4. Run in dev mode**
-```bash
-npx tauri dev
-```
+---
 
-## Production Build
-
-To build an installable `.exe`:
-```bash
-npx tauri build
-```
-
-Installer will be output to:
-```
-src-tauri/target/release/bundle/nsis/Johnny Pet_0.1.0_x64-setup.exe
-```
-
-## Returning to the Project
-
-If you're picking this back up after closing the terminal, just run:
-```bash
-npx tauri dev
-```
-
-If the port is already in use from a previous session:
-```bash
-npx kill-port 1420 && npx tauri dev
-```
+*Billora: spend your time on the work, not the paperwork.*
