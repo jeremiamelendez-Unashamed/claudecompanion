@@ -1,0 +1,50 @@
+---
+description: Generate HeyGen product demo videos from showcase READMEs via MCP. Use when the user asks for a demo video, showcase video, HeyGen video, or LaunchPad video.
+alwaysApply: false
+---
+
+# HeyGen Video Showcase Workflow
+
+This repo includes **LaunchPad** (`examples/launchpad/`) — a ready-made SaaS showcase for **README → HeyGen video** demos.
+
+## Required steps for every video request
+
+1. **Verify HeyGen MCP** — call `get_current_user`. If auth fails, tell the user to authenticate in Cursor Settings → MCP → HeyGen.
+2. **Read the product README** — `examples/launchpad/README.md` for script structure (audience, features, hook, close).
+3. **Generate** — call `create_video_agent` with `mode: "generate"`, `orientation: "landscape"`, and a prompt derived from the README.
+4. **Poll** — use `get_video_agent_session` until `video_id` is set, then `get_video` until `status` is `completed`.
+5. **Return links** — share the **`video_url`** or **`captioned_video_url`** from the API response (direct MP4 on `resource2.heygen.ai` or `files2.heygen.ai`). Do **not** only give `app.heygen.com` session or video pages — those require HeyGen login.
+
+## Default product demo prompt (LaunchPad)
+
+```
+Read examples/launchpad/README.md and make a 90-second product demo video
+for LaunchPad. High-energy SaaS product launch tone — confident presenter,
+dark-mode dashboard visuals, startup founder energy. Landscape format.
+Poll until complete and return the direct MP4 link.
+```
+
+## Shorthand prompt (user may paste this)
+
+```
+Make the LaunchPad demo video from the README.
+```
+
+## Iteration follow-ups
+
+- "Make the hook more urgent / more energetic"
+- "Emphasize [specific feature from README]"
+- "Translate the finished video to [language] with voice cloning" → `create_video_translation`
+
+## Run the dashboard locally (optional)
+
+```bash
+cd examples/launchpad && npm install && npm run dev
+```
+
+Open http://localhost:5174 — keep the terminal open.
+
+## Reference docs
+
+- `SHOWCASE.md` — user quick-start for new chats
+- `examples/launchpad/HEYGEN_DEMO.md` — one-shot prompts and iteration examples
