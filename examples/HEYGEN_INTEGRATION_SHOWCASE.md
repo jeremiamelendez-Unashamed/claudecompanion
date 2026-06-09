@@ -140,7 +140,7 @@ Landscape format.
 
 - [ ] HeyGen MCP authenticated in Cursor
 - [ ] `examples/pipelinehq` runs at http://localhost:5176
-- [ ] PipelineHQ product demo pre-rendered (asset for Scene 6)
+- [x] PipelineHQ product demo pre-rendered (asset for Scene 6)
 - [ ] Screen recordings: README scroll, Cursor prompt, HeyGen session page
 - [ ] Optional: live generation clip (5–10 min wait — use as timelapse or cut)
 
